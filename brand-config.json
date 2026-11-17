@@ -1,0 +1,31 @@
+{
+  "name": "BoloHi",
+  "company": "Rambojoy Technology Pte. Ltd.",
+  "address": "30 PASIR PANJANG ROAD #15-31A, MAPLETREE BUSINESS CITY, Singapore",
+  "links": {
+    "apple": "",
+    "google": "https://play.google.com/store/apps/details?id=com.live.hey",
+    "apk": "",
+    "recharge": "",
+    "email": "bolohiservice@gmail.com",
+    "terms": "https://www.bolohi.net/a/license/bolohi-user.html?lang=en",
+    "privacy": "https://www.bolohi.net/a/license/bolohi-privacy.html?lang=en",
+    "children": "https://www.bolohi.net/a/license/children-policy.html",
+    "xiaomi": "",
+    "oppo": "",
+    "vivo": "",
+    "huawei": ""
+  },
+  "colors": {
+    "primary": "#ffed00",
+    "ink": "#171714",
+    "background": "#fffde9",
+    "border": "#ddd8a7",
+    "hover": "#e5d400"
+  },
+  "materials": {
+    "logo": "brand/logo-dark.png",
+    "logoInverse": "brand/logo-light.png",
+    "icon": "brand/app-icon.webp"
+  }
+}
