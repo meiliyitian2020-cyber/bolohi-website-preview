@@ -6,8 +6,8 @@ for p in (root/'dist/assets').iterdir():
  mime=mimetypes.guess_type(p.name)[0] or 'application/octet-stream'
  s=s.replace('assets/'+p.name,'data:'+mime+';base64,'+base64.b64encode(p.read_bytes()).decode())
 (out/'BoloHi-offline.html').write_text(s,'utf-8')
-for n in ['README.md','SOURCES-AND-HANDOFF.md','DEPLOYMENT.md','brand-config.json','product-copy.json','qa-report.json']:
- if (root/n).exists():shutil.copy2(root/n,out/n)
+for n in ['baseline/assets/Noto-OFL.txt','README.md','SOURCES-AND-HANDOFF.md','DEPLOYMENT.md','brand-config.json','product-copy.json','qa-report.json']:
+ if (root/n).exists():shutil.copy2(root/n,out/Path(n).name)
 with zipfile.ZipFile(out/'BoloHi-review-offline.zip','w',zipfile.ZIP_DEFLATED) as z:
  for p in out.iterdir():
   if p.suffix!='.zip':z.write(p,p.name)
